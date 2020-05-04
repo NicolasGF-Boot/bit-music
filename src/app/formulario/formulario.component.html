@@ -1,0 +1,45 @@
+<style>
+    .menu-principal{
+      background: rgba(0,0,0,1);
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 47%, rgba(0,0,0,0.7) 48%, rgba(0,0,0,0.5) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(47%, rgba(0,0,0,0.7)), color-stop(48%, rgba(0,0,0,0.7)), color-stop(100%, rgba(0,0,0,0.5)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 47%, rgba(0,0,0,0.7) 48%, rgba(0,0,0,0.5) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 47%, rgba(0,0,0,0.7) 48%, rgba(0,0,0,0.5) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 47%, rgba(0,0,0,0.7) 48%, rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 47%, rgba(0,0,0,0.7) 48%, rgba(0,0,0,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+    }
+    .fondo{
+      background-image: url("../assets/img/banda.jpg");
+      background-repeat: none;
+      background-size: cover;
+    }
+    main{
+      height: 75vh;
+    }
+    .color{
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 75vh;
+    }
+    .welcome h1{
+      font-family: 'Staatliches', cursive;
+      font-size: 5rem;
+    }
+  </style>
+<main class="">
+    <div class="color d-flex justify-content-center bg-gray flex-column align-items-center">
+    <form class="color ingreso col-4 p-5 shadow rounded">
+      <h1 class="text-light">Inicio de Sesion</h1>
+      <div class="form-group">
+        <label class="text-light" for="exampleInputEmail1">Usuario</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label class="text-light" for="exampleInputPassword1">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+  </main>
+  <router-outlet></router-outlet>

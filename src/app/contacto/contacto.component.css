@@ -1,0 +1,11 @@
+  .fondo{
+    background-image: url("../../assets/img/banda.jpg");
+    background-repeat: none;
+    background-size: cover;
+  }
+  .color{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  main{
+      height: auto;
+  }
